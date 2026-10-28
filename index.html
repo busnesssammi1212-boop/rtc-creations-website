@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TECHNEX — Digital Technology Services</title><meta name="description" content="Discord bots, Telegram bots, websites and custom development by TECHNEX.">
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<div id="cfgerr" class="banner" hidden>Configuration error: edit assets/js/config.js with your Supabase URL and anon key (see README).</div>
+<header><a class="logo" href="#home">TECHNEX</a><button id="menu" aria-label="Toggle menu">☰</button>
+<nav id="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a><a href="#help">Help</a><a href="#faq">FAQ</a><a href="#privacy">Privacy</a><a class="btn" href="#order">Order a Service</a></nav></header>
+<main>
+<section id="home" class="hero"><div><h1>BUILD YOUR DIGITAL FUTURE</h1>
+<p class="muted">Powerful Discord bots, custom websites, Telegram bots, and digital solutions built for your vision.</p>
+<p><a class="btn" href="#services">EXPLORE SERVICES</a> <a class="btn alt" href="#order">PLACE AN ORDER</a></p></div>
+<div class="term" aria-hidden="true"><i>$</i> technex --new-project<br>&gt; scoping requirements... ok<br>&gt; building solution... ok<br>&gt; reviewing with you... ok<br><i>$</i> _</div></section>
+<section id="about"><h2>ABOUT TECHNEX</h2><p class="muted" style="max-width:720px">TECHNEX provides digital development services for individuals, creators, online communities, and businesses. Our goal is to help customers build reliable digital solutions, automate tasks, and establish a stronger online presence.</p>
+<div class="grid"><div class="card"><h3>Custom Development</h3></div><div class="card"><h3>Modern Technology</h3></div><div class="card"><h3>Reliable Solutions</h3></div><div class="card"><h3>Customer Support</h3></div><div class="card"><h3>Scalable Projects</h3></div><div class="card"><h3>Security-Focused Development</h3></div></div></section>
+<section id="services"><h2>SERVICES</h2><div id="svc" class="grid"><p class="muted">Loading services...</p></div></section>
+<section id="order"><h2>ORDER NOW</h2><div id="orderOk" class="ok" role="status" hidden></div>
+<form id="orderForm"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Full Name<input id="name" name="name" required maxlength="100"></label>
+<label>Email Address<input name="email" type="email" maxlength="254"></label>
+<label>Phone Number<input name="phone" type="tel" maxlength="30" pattern="[+()\d\s\-]{6,30}"></label>
+<p class="muted" style="margin:0">Provide at least an email or a phone number.</p>
+<label>Preferred Contact Platform<select name="platform" required><option value="">Select</option><option>Discord</option><option>Telegram</option><option>Email</option><option>Phone</option><option>Other</option></select></label>
+<label>Contact Information / Username<input name="contact" required maxlength="150" placeholder="Discord: username · Telegram: @username"></label>
+<label>Service<select id="service" name="service_id" required><option value="">Loading...</option></select></label>
+<label>Project Description<textarea name="description" required minlength="10" maxlength="3000" rows="5"></textarea></label>
+<label>Additional Requirements<textarea name="extra" maxlength="2000" rows="3"></textarea></label>
+<button class="btn" type="submit">PLACE ORDER</button></form></section>
+<section id="contact"><h2>CONTACT</h2><p class="muted">Business inquiries welcome.
+<a id="c-email" hidden>Email</a> <a id="c-discord" hidden target="_blank" rel="noopener">Discord</a> <a id="c-telegram" hidden target="_blank" rel="noopener">Telegram</a></p>
+<form id="contactForm"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Name<input name="name" required maxlength="100"></label><label>Email<input name="email" type="email" required maxlength="254"></label>
+<label>Message<textarea name="message" required minlength="5" maxlength="3000" rows="4"></textarea></label><button class="btn" type="submit">SEND MESSAGE</button></form></section>
+<section id="help"><h2>HELP CENTER</h2><div class="grid">
+<div class="card"><h3>Place an order</h3><p class="muted">Choose a service, describe your project and requirements, then submit the order form. You receive an Order ID on screen.</p></div>
+<div class="card"><h3>Request changes</h3><p class="muted">Contact us with your Order ID and the change you need. Scope and cost of changes are confirmed with you first.</p></div>
+<div class="card"><h3>Delivery and hosting</h3><p class="muted">Timelines, prices and hosting arrangements are agreed with you after your order is reviewed.</p></div>
+<div class="card"><h3>Need help with an order?</h3><p class="muted">Use the contact form above and quote your Order ID. Order details are never shown publicly.</p></div></div></section>
+<section id="faq"><h2>FAQ</h2>
+<details><summary>What services does TECHNEX offer?</summary><p>Custom Discord bots, Discord server setup, Telegram bots, websites, and websites with a database and hosting setup.</p></details>
+<details><summary>How can I order a custom Discord bot?</summary><p>Select it on the Order Now form and describe the features you need.</p></details>
+<details><summary>Can you create a Discord server from scratch?</summary><p>Yes, via the Discord Server Setup service.</p></details>
+<details><summary>Do you develop Telegram bots?</summary><p>Yes, for legitimate use cases such as automation and notifications.</p></details>
+<details><summary>Can you build a website with a database? Do you help with hosting?</summary><p>Yes, via the Website with Database and Hosting service. Hosting arrangements are confirmed per project.</p></details>
+<details><summary>How do I track my order?</summary><p>There is no public tracking page yet. Contact us with your Order ID.</p></details>
+<details><summary>How long does a project take? How are prices set?</summary><p>It depends on scope. Any listed price or estimate is set by us; otherwise you get a custom quote after review. Nothing is guaranteed before confirmation.</p></details>
+<details><summary>What happens after I submit an order?</summary><p>It is saved as Pending, then reviewed by our team, who contact you via your chosen platform.</p></details></section>
+<section id="privacy"><h2>PRIVACY POLICY</h2><p class="err">TEMPLATE: requires legal review before production use.</p>
+<p class="muted"><b>Controller:</b> <span class="biz" data-k="legalName"></span>. <b>Privacy contact:</b> <span class="biz" data-k="privacyEmail"></span>.</p>
+<p class="muted"><b>Collected:</b> name, email and/or phone, contact platform and username, project details, and contact-form messages. <b>Why:</b> to review and fulfil your order and reply to you.</p>
+<p class="muted"><b>Storage and processors:</b> data is stored in a Supabase (PostgreSQL) database; the site is hosted on Vercel. Both process data on our behalf. Only authorized administrators can view orders.</p>
+<p class="muted"><b>Retention:</b> [set retention period]. <b>Your rights:</b> contact the privacy contact above to request correction or deletion. Access controls and encryption in transit reduce risk, but no system is completely secure.</p></section>
+</main><footer>© TECHNEX · <a href="admin/login.html">Admin</a></footer>
+<script src="assets/js/config.js"></script><script src="assets/js/main.js"></script></body></html>
