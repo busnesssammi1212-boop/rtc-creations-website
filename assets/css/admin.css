@@ -1,4 +1,0 @@
-.adm{max-width:1200px;margin:auto;padding:24px 5vw}.bar{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.bar>*{flex:1 1 160px;width:auto}
-.tw{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--bd)}tbody tr{cursor:pointer}tbody tr:hover{background:var(--bg2)}
-.stat{font:700 2rem Consolas,monospace;color:var(--g)}#detail,.sv{background:var(--bg2);border:1px solid var(--c);padding:16px;margin:12px 0}#detail:empty{display:none}
-#detail,.sv{display:grid;gap:8px}#detail[hidden]{display:none}button.btn.sm{padding:6px 12px}.danger{color:#ff6b8a;border-color:#ff6b8a}
